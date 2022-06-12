@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 
 public class BrowserUtils {
 
@@ -80,6 +81,10 @@ public class BrowserUtils {
             System.out.println(ANSI_RED_BACKGROUND + "Title Contains Verification Test FAILED!!!" + ANSI_RESET);
         }
 
+    }
+
+    public static void webElementVerification(WebElement element, String expected){
+        Assert.assertEquals(element.getText(), expected);
     }
 
 }
