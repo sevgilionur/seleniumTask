@@ -28,6 +28,11 @@ public class Webstaurantstore {
     @FindBy(xpath = "//a[@data-testid='itemDescription']")
     public List<WebElement> searchResults;
 
+    @FindBy(css = "#paging>nav>ul >li.rc-pagination-next >a>svg")
+    public WebElement clickNextButton;
+
+    @FindBy(xpath = "//input[@data-testid='itemAddCart']")
+    public List<WebElement> inStockItems;
 
 
 
