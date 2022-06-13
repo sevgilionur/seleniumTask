@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-public class Task1 {
+public class Task1_2 {
 
     //DO NOT USE ANY DEVELOPER TOOLS TO GET ANY LOCATORS.
     //TC #1: XPATH and cssSelector Practices
